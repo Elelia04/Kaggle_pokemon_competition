@@ -110,7 +110,7 @@ def make_team_stats_df(battles, stats_map, max_turns=30):
         rows.append(extract_team_stats(b, stats_map=stats_map, max_turns=max_turns))
     return pd.DataFrame(rows)
   
--------------------------------------------------------------------------
+#-------------------------------------------------------------------------
 '''
 FEATURE: chart implementation (not used in the latest versions of the code)
 '''
