@@ -76,7 +76,6 @@ def cv_fold_safe_wr(
                 reg_alpha=0.0,
                 eval_metric="logloss",
                 tree_method="hist",
-                device="cuda",
                 random_state=seed,
             )
             if xgb_params is not None:
