@@ -111,7 +111,6 @@ def make_team_stats_df(battles, stats_map, max_turns=30):
     return pd.DataFrame(rows)
   
 -------------------------------------------------------------------------
-
 '''
 FEATURE: chart implementation (not used in the latest versions of the code)
 '''
@@ -250,7 +249,6 @@ effectiveness_df = pd.DataFrame(battle_effectiveness)
 display(effectiveness_df.head())
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: types matchup --> unused in our code
 '''
@@ -317,7 +315,6 @@ def make_lead_type_matchup_df(battles, type_chart_df, types_dict, include_target
     return pd.DataFrame(rows)
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: build_wr_map_from_battles (fold-safe winrate)
 '''
@@ -416,7 +413,6 @@ def make_team_wr_df(battles, wr_map, max_turns=30):
 
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: switches_for_player
 '''
@@ -457,7 +453,6 @@ def make_switch_df(battles, max_turns=30):
     return pd.DataFrame(rows)
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: p1_seen_count and p2_seen_count
 '''
@@ -502,7 +497,6 @@ def make_seen_p1p2_df(battles, turns_list=(10,20,30), include_target=True):
     return pd.DataFrame(rows)
   
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: make_hp_loss_df
 '''
@@ -546,7 +540,6 @@ def make_hp_loss_df(battles, turns=30):
 
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: make_hp_loss_df_multi
 '''
@@ -595,7 +588,6 @@ def make_hp_loss_df_multi(battles, turns_list=(10,20,30), include_target=True):
 
 
 #-------------------------------------------------------------------------
-
 '''
 FEATURE: make_momentum_df
 '''
