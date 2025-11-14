@@ -173,9 +173,6 @@ for name, types in sorted(types_dict.items()):
 
 all_types = sorted({t for types in types_dict.values() for t in types})
 
-print(f"\nTot number of found pokémon types: {len(all_types)}")
-print("Types:", ", ".join(all_types))
-
 def compute_real_effectiveness(battle, type_chart_df, dataset_types):
     p1_super = 0
     p2_super = 0
@@ -246,7 +243,6 @@ for battle in train_data:
     })
 
 effectiveness_df = pd.DataFrame(battle_effectiveness)
-display(effectiveness_df.head())
 
 #-------------------------------------------------------------------------
 '''
