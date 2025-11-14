@@ -1,14 +1,9 @@
-import numpy as np
 from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier
-from sklearn.metrics import (
-    accuracy_score, roc_auc_score, f1_score,
-    precision_score, recall_score
-)
-from features import assemble_features_from_battles, build_wr_map_from_battles
+from sklearn.metrics import accuracy_score, roc_auc_score, f1_score, precision_score, recall_score
 
 def cv_fold_safe_wr(
     train_data,
@@ -76,6 +71,7 @@ def cv_fold_safe_wr(
                 reg_alpha=0.0,
                 eval_metric="logloss",
                 tree_method="hist",
+                device="cuda",
                 random_state=seed,
             )
             if xgb_params is not None:
